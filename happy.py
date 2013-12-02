@@ -79,4 +79,5 @@ if __name__ == '__main__':
 	if len(sys.argv) != 2:
 		print("usage: {0} MAXIMUM".format(sys.argv[0]))
 		print("Create a graph of the happy numbers from 1 to MAXIMUM")
-	graphToDot(happificateRange(1, 1000))
+	
+	graphToDot(happificateRange(1, int(sys.argv[1])))
